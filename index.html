@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title>CALCULADORA</title>
+</head>
+
+<body>
+    <div class="contenedorprincipal">
+        <header>
+            <h1>CALCULADORA</h1>
+        </header>
+
+        <div class="contenedorcalculadora">
+
+            <input name="display" type="text" id="display" class="display" value="0" disabled=»disabled»>
+
+            <input name="botonMul" type="button" id="buttonMul" class="botones" value="*" onclick= "multiplicar()">
+            <input name="botonDiv" type="button" id="buttonDiv" class="botones" value="/" onclick= "dividir()">
+            <input name="botonSum" type="button" id="buttonSum" class="botones" value="+" onclick= "suma()">
+            <input name="botonRes" type="button" id="buttonRes" class="botones" value="-" onclick= "restar()">
+
+            <input name="num7" type="button" id="num7" class="botones" value="7" onclick= "displayNumeros(7)">
+            <input name="num8" type="button" id="num8" class="botones" value="8" onclick= "displayNumeros(8)">
+            <input name="num9" type="button" id="num9" class="botones" value="9" onclick= "displayNumeros(9)">
+            <input name="botonBorrar" type="button" id="buttonBorrar" class="botones" value="CE" onclick="limpiarDisplay()">   
+
+            <input name="num4" type="button" id="num4" class="botones" value="4" onclick="displayNumeros(4)">
+            <input name="num5" type="button" id="num5" class="botones" value="5" onclick="displayNumeros(5)">
+            <input name="num6" type="button" id="num6" class="botones" value="6" onclick="displayNumeros(6)">   
+            <div></div>
+
+            <input name="num1" type="button" id="num4" class="botones" value="1" onclick="displayNumeros(1)">
+            <input name="num2" type="button" id="num5" class="botones" value="2" onclick="displayNumeros(2)">
+            <input name="num3" type="button" id="num6" class="botones" value="3" onclick="displayNumeros(3)">
+            <div></div>
+
+            <input name="num0" type="button" id="num6" class="botones" value="0" onclick="displayNumeros(0)">
+            <input name="botonComa" type="button" id="buttonComa" class="botones" value="." onclick="botonComa()">
+            <input name="botonIgual" type="button" id="buttonIgual" class="botones" value="=" onclick="igual()">
+
+        </div>
+    </div>
+
+    
+</body>
+</html>
